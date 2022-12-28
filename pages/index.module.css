@@ -49,9 +49,10 @@
   border: 1px solid #06b7f2;
   border-radius: 4px;
   margin-bottom: 24px;
+  color: #ffffff;
 }
 .main ::placeholder {
-  color: #8e8ea0;
+  color: #ffffff;
   opacity: 1;
 }
 .main input[type="submit"] {
@@ -73,10 +74,11 @@
   align-items: center;
   text-align: center;
   background-color: black;
+  color: #ffffff;
 }
 
 .footer a {
-  color: rgb(0, 128, 255);
+  color: rgb(6, 183, 242);
   text-decoration: none;
   background-color: black;
 }
