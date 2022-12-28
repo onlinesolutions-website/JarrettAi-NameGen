@@ -43,7 +43,7 @@ export default function Home() {
         <div className={styles.result}>{result}</div>
       </main>
       <footer className={styles.footer}>
-        Made by <a href="https://jarrettai-saas-wesbite.onrender.com/">JarrettAi</a>
+        Made by <a href="https://jarrettai.online/">JarrettAi</a>
       </footer>
     </div>
   );
