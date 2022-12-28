@@ -23,18 +23,18 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>JarrettAi Name Generator</title>
+        <title>Name Generator by JarrettAi</title>
         <link rel="icon" href="/shuttle.png" />
       </Head>
 
       <main className={styles.main}>
         <img src="/shuttle.png" className={styles.icon} />
-        <h3>Jarrettai Name Generator</h3>
+        <h3>Name Generator by JarrettAi</h3>
         <form onSubmit={onSubmit}>
           <input
             type="text"
             name="startup"
-            placeholder="Enter Business Keywords"
+            placeholder="Enter Keywords to Generate Names"
             value={startupInput}
             onChange={(e) => setStartupInput(e.target.value)}
           />
