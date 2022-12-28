@@ -17,7 +17,7 @@ export default async function (req, res) {
 function generatePrompt(startup) {
   const capitalizedStartup =
     startup[0].toUpperCase() + startup.slice(1).toLowerCase();
-  return `Suggest three names for an Indian tech startup domain that is run by Genz.
+  return `Suggest three names for a Tech Business.
   
   Domain: Payment gateway
   Names: Zoomer Pay, Slay Pay, No Cap Payment
