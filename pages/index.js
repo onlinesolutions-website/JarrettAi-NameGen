@@ -23,13 +23,13 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Name Generator by JarrettAi</title>
+        <title>Keyword Generator by JarrettAi</title>
         <link rel="icon" href="/shuttle.png" />
       </Head>
 
       <main className={styles.main}>
         <img src="/shuttle.png" className={styles.icon} />
-        <h3>Name Generator by JarrettAi</h3>
+        <center><h3>JarrettAi Keyword Gen</h3></center>
         <form onSubmit={onSubmit}>
           <input
             type="text"
