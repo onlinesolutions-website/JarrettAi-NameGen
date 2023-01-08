@@ -7,9 +7,10 @@ const openai = new OpenAIApi(configuration);
 
 export default async function (req, res) {
   const completion = await openai.createCompletion({
-    model: "text-davinci-002",
+    model: "text-davinci-003",
     prompt: generatePrompt(req.body.startup),
-    temperature: 0.6,
+    temperature: 0.9,
+    n: 20,  // modify this line to generate 20 completions
   });
   res.status(200).json({ result: completion.data.choices[0].text });
 }
@@ -17,7 +18,7 @@ export default async function (req, res) {
 function generatePrompt(startup) {
   const capitalizedStartup =
     startup[0].toUpperCase() + startup.slice(1).toLowerCase();
-  return `Suggest three names for a Tech Business.
+  return `Suggest ten names for a Tech Business.
   
   Domain: Payment gateway
   Names: Zoomer Pay, Slay Pay, No Cap Payment
